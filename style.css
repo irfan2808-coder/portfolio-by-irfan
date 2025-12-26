@@ -1,0 +1,388 @@
+/* ================= GOOGLE FONTS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lavishly+Yours&family=Pacifico&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 45);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(5, 5, 67);
+}
+.right{
+    position: relative;
+}
+#nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 27px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(150, 150, 235);
+}
+
+.icon-btn {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.4s ease;
+}
+
+.icon-btn i {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+/* ================= HOME ================= */
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+    margin: 50px;
+}
+
+.rightsection img {
+    width: 80%;
+}
+
+.purple,
+#element {
+    color: rgb(83, 6, 154);
+}
+
+main hr {
+    border: 0;
+    background-color: rgb(39, 39, 165);
+    height: 3px;
+}
+
+/* ================= ABOUT ================= */
+#about {
+    width: 100%;
+    background-color: rgb(21, 1, 56);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+
+#about img {
+    height: 450px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 60%;
+}
+
+.first {
+    width: 60%;
+    text-align: justify;
+}
+
+.first h2 {
+    color: blueviolet;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* ================= SKILLS ================= */
+#Skills {
+    width: 100%;
+    background-color: rgb(21, 1, 56);
+    padding: 50px;
+}
+
+.skill-title {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.skill-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-container {
+    height: 190px;
+    width: 200px;
+    background-color: rgb(41, 15, 94);
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+/* ================= SERVICES ================= */
+#services {
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgb(21, 1, 56);
+    padding: 25px;
+}
+
+.services-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* 3 boxes in one row */
+.services-container {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: rgb(41, 15, 94);
+    border-radius: 30px;
+    padding: 25px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-container:hover {
+    background: blue;
+    transform: translateY(-10px);
+}
+
+.services-container h4 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.services-container p {
+    text-align: center;
+    font-style: italic;
+}
+
+/* ================= CONTACT ================= */
+#contact {
+    width: 100%;
+    background-color: rgb(34, 7, 61);
+    padding: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-left h1 {
+    font-size: 3em;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: blue;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 30px;
+}
+.social-icon a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline block:
+
+}
+.social-icon a:hover{
+    color: blue;
+    transform: translateY(-10px);
+}
+.contact-right {
+    flex-basis: 50%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    color: white;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    display: inline-block;
+    width: 120px;
+    background-color: rgb(219, 219, 233);
+    text-align: center;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.btn:hover {
+    background: blue;
+    transform: translateY(-5px);
+}
+
+/* ================= FOOTER ================= */
+.end {
+    background-color: rgb(0, 0, 45);
+    padding: 25px 0;
+    text-align: center;
+}
+.end i{
+    color: red;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media only screen and (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+        #nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                background: #02023a;
+                width: 200px;
+                padding: 15px;
+            }
+        
+            #nav-links.active {
+                display: flex;
+            }
+        
+            .icon-btn {
+                display: block;
+            }
+        }
+
+    /* ICON ANIMATION */
+    .icon-btn.active i {
+        transform: rotate(180deg);
+    }
+
+    .icon-btn.active i::before {
+        content: "\f00d";
+        /* Font Awesome close icon */
+    }
+
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.5;
+    }
+
+    .firstsection>div {
+        width: 90%;
+    }
+
+    .leftsection {
+        font-size: 1.8rem;
+        margin: 20px;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about img {
+        height: 300px;
+        width: 200px;
+    }
+
+    .first {
+        width: 100%;
+    }
+
+    .services-container,
+    .skill-container {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .contact-left h1 {
+        font-size: 2em;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 900px) {
+    .services-container {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+    .services-container {
+        flex: 1 1 100%;
+    }
+}
